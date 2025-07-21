@@ -33,8 +33,8 @@
                         </div>
 
                         <ul class="topbar-link">
-                            <li><a href="/login">Login</a></li>
-                            <li><a href="/register">Register</a></li>
+                            <li><a href="{{route('login')}}">Login</a></li>
+                            <li><a href="{{route('register')}}">Register</a></li>
                         </ul>
                     </div>
                 </div>
@@ -66,20 +66,20 @@
                             <a class="nav-link active" href="/">home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="/about-us"> about </a>
+                            <a class="nav-link" href="{{route('about')}}"> about </a>
                         </li>
                         <li class="nav-item dropdown has-megamenu">
-                            <a class="nav-link" href="/blog">blog </a>
+                            <a class="nav-link" href="{{route('blog')}}">blog </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Pages </a>
                             <ul class="dropdown-menu animate fade-up">
-                                <li><a class="dropdown-item icon-arrow" href="/blog-details"> Blog single detail
+                                <li><a class="dropdown-item icon-arrow" href="{{route('blog-details')}}"> Blog single detail
                                     </a></li>
-                                <li><a class="dropdown-item" href="/error"> 404 Error </a>
+                                <li><a class="dropdown-item" href="{{route('error')}}"> 404 Error </a>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="/contact"> contact </a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{route('contact')}}"> contact </a></li>
                     </ul>
 
 
@@ -105,7 +105,7 @@
                                         </div>
                                         <div class="col-auto">
                                             <a class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right"
-                                                href="/error">
+                                                href="{{route('error')}}">
                                                 <i class="fa fa-search"></i>
                                             </a>
                                         </div>
@@ -152,21 +152,21 @@
                                 <a class="nav-link active text-dark" href="/"> Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="/about-us"> About </a>
+                                <a class="nav-link text-dark" href="{{route('about')}}"> About </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="/blog">Blog </a>
+                                <a class="nav-link text-dark" href="{{route('blog')}}">Blog </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active dropdown-toggle  text-dark" href="#"
                                     data-toggle="dropdown">Pages </a>
                                 <ul class="dropdown-menu dropdown-menu-left">
-                                    <li><a class="dropdown-item" href="/blog-details">Blog details</a></li>
-                                    <li><a class="dropdown-item" href="/error"> 404 Error</a></li>
+                                    <li><a class="dropdown-item" href="{{route('blog-details')}}">Blog details</a></li>
+                                    <li><a class="dropdown-item" href="{{route('error')}}"> 404 Error</a></li>
 
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link  text-dark" href="/contact"> Contact </a>
+                            <li class="nav-item"><a class="nav-link  text-dark" href="{{route('contact')}}"> Contact </a>
                             </li>
                         </ul>
 
