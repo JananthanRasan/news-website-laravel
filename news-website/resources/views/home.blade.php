@@ -1,6 +1,11 @@
 @extends('layouts.master')
 @section('title', 'Home')
-@section('color', 'success')
+@push('styles')
+    #title {
+        color: cyan;
+    }
+
+@endpush
 @section('content')
  <!-- Tranding news  carousel-->
     <section class="bg-light">

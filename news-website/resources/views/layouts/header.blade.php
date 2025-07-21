@@ -76,7 +76,7 @@
                             <ul class="dropdown-menu animate fade-up">
                                 <li><a class="dropdown-item icon-arrow" href="/blog-details"> Blog single detail
                                     </a></li>
-                                <li><a class="dropdown-item" href="/404"> 404 Error </a>
+                                <li><a class="dropdown-item" href="/error"> 404 Error </a>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="/contact"> contact </a></li>
@@ -105,7 +105,7 @@
                                         </div>
                                         <div class="col-auto">
                                             <a class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right"
-                                                href="/404">
+                                                href="/error">
                                                 <i class="fa fa-search"></i>
                                             </a>
                                         </div>
@@ -162,7 +162,7 @@
                                     data-toggle="dropdown">Pages </a>
                                 <ul class="dropdown-menu dropdown-menu-left">
                                     <li><a class="dropdown-item" href="/blog-details">Blog details</a></li>
-                                    <li><a class="dropdown-item" href="/404"> 404 Error</a></li>
+                                    <li><a class="dropdown-item" href="/error"> 404 Error</a></li>
 
                                 </ul>
                             </li>

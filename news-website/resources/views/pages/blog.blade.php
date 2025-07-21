@@ -1,6 +1,11 @@
 @extends('layouts.master')
 @section('title', 'Blog Page')
-@section('color', 'warning')
+@push('styles')
+    #title {
+        color: #ccc;
+    }
+
+@endpush
 @section('content')
 
 

@@ -1,6 +1,11 @@
 @extends('layouts.master')
 @section('title', 'Contact Us')
-@section('color', 'secondary')
+@push('styles')
+    #title {
+        color: blue;
+    }
+
+@endpush
 @section('content')
 
 

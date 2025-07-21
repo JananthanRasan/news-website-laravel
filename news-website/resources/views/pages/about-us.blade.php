@@ -1,6 +1,11 @@
 @extends('layouts.master')
 @section('title', 'About Us')
-@section('color', 'info')
+@push('styles')
+    #title {
+        color: red;
+    }
+
+@endpush
 @section('content')
 
     <section>

@@ -1,6 +1,11 @@
 @extends('layouts.master')
 @section('title', '404 Not Found')
-@section('color', 'primary')
+@push('styles')
+    #title {
+        color: green;
+    }
+
+@endpush
 @section('content')
 
 

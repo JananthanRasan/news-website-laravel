@@ -1,6 +1,11 @@
 @extends('layouts.master')
 @section('title', 'Login')
-@section('color', 'success')
+@push('styles')
+    #title {
+        color: #ccc;
+    }
+
+@endpush
 @section('content')
     <!-- login -->
     <section class="wrap__section">

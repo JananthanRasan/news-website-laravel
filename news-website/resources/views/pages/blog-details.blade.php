@@ -1,6 +1,11 @@
 @extends('layouts.master')
 @section('title', 'Blog Details')
-@section('color', 'primary')
+@push('styles')
+    #title {
+        color: yellow;
+    }
+
+@endpush
 @section('content')
 
 

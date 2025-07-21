@@ -1,6 +1,10 @@
 @extends('layouts.master')
 @section('title', 'Register')
-@section('color', 'info')
+@push('styles')
+    #title {
+        color: #ccc;
+    }
+@endpush
 @section('content')
 
     <!-- register -->

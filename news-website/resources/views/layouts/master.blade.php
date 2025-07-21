@@ -7,13 +7,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{asset('css/styles.css')}}" rel="stylesheet">
+    <style>
+        @stack('styles');
+    </style>
+
 </head>
 
 <body>
 
     @include('layouts.header')
 
-    <h1 class="text-center text-@yield('color')">Welcome Yarl IT</h1>
+    <h1 class="text-center" id="title">Welcome Yarl IT</h1>
 
     @yield('content')
 

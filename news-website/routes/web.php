@@ -1,35 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', [HomeController::class, 'home']);
 
-Route::get('/about-us', function () {
-    return view('pages.about-us');
-});
+Route::get('/about-us', [HomeController::class, 'about']);
 
-Route::get('/blog', function () {
-    return view('pages.blog');
-});
+Route::get('/blog', [HomeController::class, 'blog']);
 
-Route::get('/blog-details', function () {
-    return view('pages.blog-details');
-});
+Route::get('/blog-details', [HomeController::class, 'blogDetails']);
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
+Route::get('/contact', [HomeController::class, 'contact']);
 
-Route::get('/404', function () {
-    return view('pages.404');
-});
+Route::get('/error', [HomeController::class, 'error']);
 
-Route::get('/login', function () {
-    return view('pages.login');
-});
+Route::get('/login', [HomeController::class, 'login']);
 
-Route::get('/register', function () {
-    return view('pages.register');
-});
+Route::get('/register', [HomeController::class, 'register']);
