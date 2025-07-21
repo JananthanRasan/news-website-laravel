@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Register')
+@section('color', 'info')
 @section('content')
 
     <!-- register -->

@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Blog Page')
+@section('color', 'warning')
 @section('content')
 
 

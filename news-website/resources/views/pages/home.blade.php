@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Home')
+@section('color', 'success')
 @section('content')
  <!-- Tranding news  carousel-->
     <section class="bg-light">

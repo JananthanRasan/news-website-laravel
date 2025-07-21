@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Login')
+@section('color', 'success')
 @section('content')
     <!-- login -->
     <section class="wrap__section">

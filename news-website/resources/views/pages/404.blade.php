@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('title', '404 Not Found')
+@section('color', 'primary')
 @section('content')
 
 

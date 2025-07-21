@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Blog Details')
+@section('color', 'primary')
 @section('content')
 
 
@@ -653,7 +654,7 @@
                                     <!-- Post Article -->
                                     <div class="card__post card__post-list">
                                         <div class="image-sm">
-                                            <a href="./blog_details.html">
+                                            <a href="/blog-details">
                                                 <img src="{{asset('images/newsimage1.png')}}" class="img-fluid" alt="">
                                             </a>
                                         </div>
@@ -679,7 +680,7 @@
                                                 </div>
                                                 <div class="card__post__title">
                                                     <h6>
-                                                        <a href="./blog_details.html">
+                                                        <a href="/blog-details">
                                                             6 Best Tips for Building a Good Shipping Boat
                                                         </a>
                                                     </h6>
@@ -692,7 +693,7 @@
                                     <!-- Post Article -->
                                     <div class="card__post card__post-list">
                                         <div class="image-sm">
-                                            <a href="./blog_details.html">
+                                            <a href="/blog-details">
                                                 <img src="{{asset('images/news2.jpg')}}" class="img-fluid" alt="">
                                             </a>
                                         </div>
@@ -717,7 +718,7 @@
                                                 </div>
                                                 <div class="card__post__title">
                                                     <h6>
-                                                        <a href="./blog_details.html">
+                                                        <a href="/blog-details">
                                                             6 Best Tips for Building a Good Shipping Boat
                                                         </a>
                                                     </h6>
@@ -730,7 +731,7 @@
                                     <!-- Post Article -->
                                     <div class="card__post card__post-list">
                                         <div class="image-sm">
-                                            <a href="./blog_details.html">
+                                            <a href="/blog-details">
                                                 <img src="{{asset('images/news3.jpg')}}" class="img-fluid" alt="">
                                             </a>
                                         </div>
@@ -756,7 +757,7 @@
                                                 </div>
                                                 <div class="card__post__title">
                                                     <h6>
-                                                        <a href="./blog_details.html">
+                                                        <a href="/blog-details">
                                                             6 Best Tips for Building a Good Shipping Boat
                                                         </a>
                                                     </h6>

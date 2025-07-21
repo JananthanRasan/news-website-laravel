@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('title', 'About Us')
+@section('color', 'info')
 @section('content')
 
     <section>
