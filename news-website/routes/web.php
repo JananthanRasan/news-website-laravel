@@ -5,7 +5,7 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'home']);
 
-Route::get('/about-mfwtffysm', [HomeController::class, 'about'])->name('about');
+Route::get('/about-us', [HomeController::class, 'about'])->name('about');
 
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 

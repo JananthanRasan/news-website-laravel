@@ -11,8 +11,9 @@ class HomeController extends Controller
         return view('home');
     }
 
+
     public function about(){
-        return view('pages.about-us');
+        return view('pages.about-us', ['name' => "Jananthan"]);
     }
 
     public function blog(){
@@ -38,4 +39,7 @@ class HomeController extends Controller
     public function register(){
         return view('pages.register');
     }
+
+
 }
+?>
