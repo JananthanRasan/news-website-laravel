@@ -1,20 +1,22 @@
 @extends('layouts.master')
 @section('title', 'Show All Data')
 @push('styles')
-    body{
+    #form{
     background-color: rgb(161, 194, 205);
+    border-radius: 10px;
     }
     #input{
     border-radius: 10px;
     }
 @endpush
 @section('content')
-    <div class="container">
+    <div class="container mt-3 mb-4" id="form">
         <div class="row">
             <div class="col-sm-3">
             </div>
-            <div class="col-sm-6  bg-light mb-3" id="input">
-                <h2><a href="/student/create" class="btn btn-primary col-sm-12 mb-3 mt-3">Create New Student</a></h2>
+            <div class="col-sm-6  bg-light mb-5 mt-5" id="input">
+                <h2 class="text-center text-danger mb-2 mt-3">All Student Details</h2>
+                <h2><a href="/student/create" class="btn btn-primary col-sm-12 mb-2">Create New Student</a></h2>
                 <table class="table table-striped" width="100%">
                     <thead>
                         <tr>

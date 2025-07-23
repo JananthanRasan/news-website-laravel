@@ -56,7 +56,7 @@
                 </div>
                 <figure class="mb-0 mx-auto">
                     <a href="/">
-                        <img src="{{ asset('images/logo.png') }}" alt="" class="img-fluid logo">
+                        <img src="{{ asset('images/logo1.png') }}" alt="" class="img-fluid logo">
                     </a>
                 </figure>
 

@@ -18,14 +18,6 @@
 
     @include('layouts.header')
 
-    <h1 class="text-center" id="title">Welcome
-        @if (@isset($name))
-            {{ $name }}
-        @else
-            Yarl IT
-        @endif
-    </h1>
-
     @yield('content')
 
     @include('layouts.footer')
