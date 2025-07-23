@@ -9,7 +9,7 @@
     }
 @endpush
 @section('content')
-    <form action="/student" method="post" class="container mt-5 mb-4">
+    <form action="/student" method="post" class="container mt-3 mb-4">
         @csrf
         <div class="row">
             <div class="col-sm-4"></div>

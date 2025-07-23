@@ -9,7 +9,7 @@
         }
 @endpush
 @section('content')
-    <div class="container mt-5 mb-4">
+    <div class="container mt-3 mb-3">
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4  border p-3 shadow bg-light" id="input">
