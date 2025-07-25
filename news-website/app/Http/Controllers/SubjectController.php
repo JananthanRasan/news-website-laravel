@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class StudentsController extends Controller
+class SubjectController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('student.index');
+        //
     }
 
     /**
@@ -19,7 +19,7 @@ class StudentsController extends Controller
      */
     public function create()
     {
-        return view('student.create');
+        //
     }
 
     /**
@@ -27,7 +27,7 @@ class StudentsController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        //
     }
 
     /**
@@ -35,7 +35,7 @@ class StudentsController extends Controller
      */
     public function show(string $id)
     {
-        return view('student.show');
+        //
     }
 
     /**
@@ -43,7 +43,7 @@ class StudentsController extends Controller
      */
     public function edit(string $id)
     {
-        return view('student.edit');
+        //
     }
 
     /**
@@ -51,7 +51,7 @@ class StudentsController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        dd($request->all());
+        //
     }
 
     /**
@@ -59,6 +59,6 @@ class StudentsController extends Controller
      */
     public function destroy(string $id)
     {
-        dd($id);
+        //
     }
 }

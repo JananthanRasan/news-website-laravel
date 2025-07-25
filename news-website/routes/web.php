@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\StudentsController;
+use App\Http\Controllers\StudentController;
 
 Route::get('/', [HomeController::class, 'home']);
 
@@ -20,4 +20,4 @@ Route::get('/login', [HomeController::class, 'login'])->name('login');
 
 Route::get('/register', [HomeController::class, 'register'])->name('register');
 
-Route::resource('/student', StudentsController::class);
+Route::resource('/students', StudentController::class);

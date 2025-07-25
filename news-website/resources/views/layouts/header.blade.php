@@ -77,6 +77,7 @@
                                 <li><a class="dropdown-item icon-arrow" href="{{route('blog-details')}}"> Blog single detail
                                     </a></li>
                                 <li><a class="dropdown-item" href="{{route('error')}}"> 404 Error </a>
+                                <li><a class="dropdown-item" href="/students"> Student List </a>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{{route('contact')}}"> contact </a></li>
@@ -163,6 +164,7 @@
                                 <ul class="dropdown-menu dropdown-menu-left">
                                     <li><a class="dropdown-item" href="{{route('blog-details')}}">Blog details</a></li>
                                     <li><a class="dropdown-item" href="{{route('error')}}"> 404 Error</a></li>
+                                    <li><a class="dropdown-item" href="/students"> Student List</a></li>
 
                                 </ul>
                             </li>
