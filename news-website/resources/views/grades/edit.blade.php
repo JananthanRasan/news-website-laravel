@@ -14,7 +14,7 @@
         @csrf
         @method('put')
         <div class="row">
-            <div class="col-sm-5 m-auto border p-3 shadow bg-light mt-5 mb-5" id="input">
+            <div class="col-sm-5 mx-auto border p-3 shadow bg-light mt-5 mb-5" id="input">
                 <h2 class="text-center mb-3">Edit Grade</h2>
                 <table width="100%s">
                     <tr>
