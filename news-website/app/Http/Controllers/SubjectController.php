@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Subject;
 class SubjectController extends Controller
 {
     /**
@@ -11,7 +11,8 @@ class SubjectController extends Controller
      */
     public function index()
     {
-        //
+        $subjects = Subject::all();
+        return view('subjects.index',compact('subjects'));
     }
 
     /**
@@ -19,7 +20,7 @@ class SubjectController extends Controller
      */
     public function create()
     {
-        //
+        return view('subjects.create');
     }
 
     /**
@@ -27,7 +28,15 @@ class SubjectController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $subject = new Subject;
+
+        $subject->subject_name = $request->subject_name;
+        $subject->subject_index = $request->subject_index;
+        $subject->subject_order_no = $request->subject_order_no;
+        $subject->subject_type = $request->subject_type;
+
+        $subject->save();
+        return redirect('/subjects');
     }
 
     /**
@@ -35,7 +44,8 @@ class SubjectController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $subject = Subject::Find($id);
+        return view('subjects.show',compact('subject'));
     }
 
     /**
@@ -43,7 +53,8 @@ class SubjectController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $subject = Subject::Find($id);
+        return view('subjects.edit',compact('subject'));
     }
 
     /**
@@ -51,7 +62,15 @@ class SubjectController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $subject = Subject::find($id);
+
+        $subject->subject_name = $request->subject_name;
+        $subject->subject_index = $request->subject_index;
+        $subject->subject_order_no = $request->subject_order_no;
+        $subject->subject_type = $request->subject_type;
+
+        $subject->save();
+        return redirect('/subjects');
     }
 
     /**
@@ -59,6 +78,8 @@ class SubjectController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $subject = Subject::find($id);
+        $subject->delete();
+        return redirect('/subjects');
     }
 }

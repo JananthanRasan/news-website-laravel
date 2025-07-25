@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('subjects', function (Blueprint $table) {
             $table->id();
             $table->string('subject_name',20);
-            $table->string('subject_index',10);
+            $table->string('subject_index',10)->unique();
             $table->decimal('subject_order_no', total: 8, places: 2);
             $table->string('subject_type',20);
             $table->timestamps();

@@ -33,8 +33,8 @@
                         </div>
 
                         <ul class="topbar-link">
-                            <li><a href="{{route('login')}}">Login</a></li>
-                            <li><a href="{{route('register')}}">Register</a></li>
+                            <li><a href="{{ route('login') }}">Login</a></li>
+                            <li><a href="{{ route('register') }}">Register</a></li>
                         </ul>
                     </div>
                 </div>
@@ -62,25 +62,49 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="main_nav99">
                     <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Students </a>
+                            <ul class="dropdown-menu animate fade-up">
+                                <li><a class="dropdown-item icon-arrow" href="/students"> Student List
+                                    </a></li>
+                                <li><a class="dropdown-item" href="/students/create"> Create Student </a>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Grades </a>
+                            <ul class="dropdown-menu animate fade-up">
+                                <li><a class="dropdown-item icon-arrow" href="/grades"> Grade List
+                                    </a></li>
+                                <li><a class="dropdown-item" href="/grades/create"> Create Grade </a>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Subjects </a>
+                            <ul class="dropdown-menu animate fade-up">
+                                <li><a class="dropdown-item icon-arrow" href="/subjects"> Subject List
+                                    </a></li>
+                                <li><a class="dropdown-item" href="/subjects/create"> Create Subject </a>
+                            </ul>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="/">home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="{{route('about')}}"> about </a>
+                            <a class="nav-link" href="{{ route('about') }}"> about </a>
                         </li>
                         <li class="nav-item dropdown has-megamenu">
-                            <a class="nav-link" href="{{route('blog')}}">blog </a>
+                            <a class="nav-link" href="{{ route('blog') }}">blog </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Pages </a>
                             <ul class="dropdown-menu animate fade-up">
-                                <li><a class="dropdown-item icon-arrow" href="{{route('blog-details')}}"> Blog single detail
+                                <li><a class="dropdown-item icon-arrow" href="{{ route('blog-details') }}"> Blog single
+                                        detail
                                     </a></li>
-                                <li><a class="dropdown-item" href="{{route('error')}}"> 404 Error </a>
-                                <li><a class="dropdown-item" href="/students"> Student List </a>
+                                <li><a class="dropdown-item" href="{{ route('error') }}"> 404 Error </a>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{route('contact')}}"> contact </a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}"> contact </a></li>
                     </ul>
 
 
@@ -106,7 +130,7 @@
                                         </div>
                                         <div class="col-auto">
                                             <a class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right"
-                                                href="{{route('error')}}">
+                                                href="{{ route('error') }}">
                                                 <i class="fa fa-search"></i>
                                             </a>
                                         </div>
@@ -150,25 +174,49 @@
                     <nav class="list-group list-group-flush">
                         <ul class="navbar-nav ">
                             <li class="nav-item">
+                                <a class="nav-link active dropdown-toggle  text-dark" href="#"
+                                    data-toggle="dropdown">Students </a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a class="dropdown-item" href="/students">Student List</a></li>
+                                    <li><a class="dropdown-item" href="/students/create">Create Student</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active dropdown-toggle  text-dark" href="#"
+                                    data-toggle="dropdown">Grades </a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a class="dropdown-item" href="/grades">Grade List</a></li>
+                                    <li><a class="dropdown-item" href="/grades/create">Create Grade</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active dropdown-toggle  text-dark" href="#"
+                                    data-toggle="dropdown">Subjects </a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a class="dropdown-item" href="/subjects">Subject List</a></li>
+                                    <li><a class="dropdown-item" href="/subjects/create">Create Subject</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link active text-dark" href="/"> Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="{{route('about')}}"> About </a>
+                                <a class="nav-link text-dark" href="{{ route('about') }}"> About </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="{{route('blog')}}">Blog </a>
+                                <a class="nav-link text-dark" href="{{ route('blog') }}">Blog </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active dropdown-toggle  text-dark" href="#"
                                     data-toggle="dropdown">Pages </a>
                                 <ul class="dropdown-menu dropdown-menu-left">
-                                    <li><a class="dropdown-item" href="{{route('blog-details')}}">Blog details</a></li>
-                                    <li><a class="dropdown-item" href="{{route('error')}}"> 404 Error</a></li>
-                                    <li><a class="dropdown-item" href="/students"> Student List</a></li>
-
+                                    <li><a class="dropdown-item" href="{{ route('blog-details') }}">Blog details</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{{ route('error') }}"> 404 Error</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link  text-dark" href="{{route('contact')}}"> Contact </a>
+                            <li class="nav-item"><a class="nav-link  text-dark" href="{{ route('contact') }}">
+                                    Contact </a>
                             </li>
                         </ul>
 

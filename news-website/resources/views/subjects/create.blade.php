@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Create Student')
+@section('title', 'Create Subject')
 @push('styles')
     #form{
         background-color: rgb(161, 194, 205);
@@ -10,26 +10,36 @@
     }
 @endpush
 @section('content')
-    <form action="/student" method="post" class="container mt-3 mb-4" id="form">
+    <form action="/subjects" method="post" class="container mt-4 mb-4" id="form">
         @csrf
         <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4  border p-3 shadow bg-light mt-5 mb-5" id="input">
-                <h2 class="text-center mb-3">Create Student</h2>
+            <div class="col-sm-5 m-auto border p-3 shadow bg-light mt-5 mb-5" id="input">
+                <a href="/subjects" class="btn btn-secondary mt-2">Back</a>
+                <h2 class="text-center mb-3 mt-3">Create Subject</h2>
                 <table width="100%s">
                     <tr>
-                        <td><label for="fname" class="col-form-label">First Name</label></td>
-                        <td><input type="text" name="fname" id="fname" class="form-control"></td>
+                        <td><label for="subject_name" class="col-form-label">Subject Name</label></td>
+                        <td><input type="text" name="subject_name" id="subject_name" class="form-control" required></td>
                     </tr>
                     <tr>
-                        <td><label for="lname" class="col-form-label mb-4 mt-2">Last Name</label></td>
-                        <td><input type="text" name="lname" id="lname" class="form-control mb-4 mt-2"></td>
+                        <td><label for="subject_index" class="col-form-label mt-2">Subject Index</label></td>
+                        <td><input type="text" name="subject_index" id="subject_index" class="form-control mt-2" required></td>
                     </tr>
                     <tr>
+                        <td><label for="subject_order_no" class="col-form-label mt-2">Subject Order No</label></td>
+                        <td><input type="number" name="subject_order_no" id="subject_order_no" class="form-control mt-2" step="any" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subject_type" class="col-form-label mt-2 mb-3">Subject Type</label></td>
                         <td>
-                            <a href="/student" class="btn btn-secondary">Back</a>
+                            <select name="subject_type" id="subject_type" class="form-control mt-2 mb-3">
+                                <option value="Mandatory">Mandatory</option>
+                                <option value="Optional">Optional</option>
+                            </select>
                         </td>
-                        <td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
                             <input type="submit" value="Submit" class="form-control bg-success">
                         </td>
                     </tr>

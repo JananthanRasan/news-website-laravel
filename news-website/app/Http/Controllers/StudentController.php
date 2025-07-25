@@ -29,7 +29,19 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $student = new Student;
+        $student->admission_no = $request->admission_no;
+        $student->student_name = $request->student_name;
+        $student->father_name = $request->father_name;
+        $student->gender = $request->gender;
+        $student->telephone_no = $request->telephone_no;
+        $student->nic_no = $request->nic_no;
+        $student->date_of_birth = $request->date_of_birth;
+        $student->address = $request->address;
+        $student->join_date = $request->join_date;
+
+        $student->save();
+        return redirect('/students');
     }
 
     /**
@@ -37,7 +49,8 @@ class StudentController extends Controller
      */
     public function show(string $id)
     {
-        return view('students.show');
+        $student = Student::Find($id);
+        return view('students.show',compact('student'));
     }
 
     /**
@@ -45,7 +58,8 @@ class StudentController extends Controller
      */
     public function edit(string $id)
     {
-        return view('students.edit');
+        $student = Student::Find($id);
+        return view('students.edit',compact('student'));
     }
 
     /**
@@ -53,7 +67,20 @@ class StudentController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $student = Student::find($id);
+
+        $student->admission_no = $request->admission_no;
+        $student->student_name = $request->student_name;
+        $student->father_name = $request->father_name;
+        $student->gender = $request->gender;
+        $student->telephone_no = $request->telephone_no;
+        $student->nic_no = $request->nic_no;
+        $student->date_of_birth = $request->date_of_birth;
+        $student->address = $request->address;
+        $student->join_date = $request->join_date;
+
+        $student->save();
+        return redirect('/students');
     }
 
     /**
@@ -61,6 +88,8 @@ class StudentController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $student = Student::find($id);
+        $student->delete();
+        return redirect('/students');
     }
 }
