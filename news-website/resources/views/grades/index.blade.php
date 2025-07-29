@@ -23,7 +23,7 @@
                             <th scope="col">Grade Color</th>
                             <th scope="col">Grade Order No</th>
                             <th scope="col">Grade Group</th>
-                            <th scope="col">Show</th>
+                            <th scope="col">Show Students</th>
                             <th scope="col">Edit</th>
                             <th scope="col">Delete</th>
                         </tr>
