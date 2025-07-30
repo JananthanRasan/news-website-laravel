@@ -47,10 +47,8 @@ class StudentController extends Controller
 
         $student->save();
 
-        // Add subjects
+        // Add student_subject
         $student->subjects()->attach($request->subjects);
-
-
 
         return redirect('/students');
     }
