@@ -43,8 +43,10 @@ class GradeController extends Controller
      */
     public function show(string $id)
     {
+        $grade = Grade::find($id);
         $students = Grade::Find($id)->students;
-        return view('grades.show',compact('students'));
+        $subjects = Grade::Find($id)->subjects;
+        return view('grades.show',compact('grade','students','subjects'));
     }
 
     /**

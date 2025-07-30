@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Student;
+use App\Models\Subject;
+use App\Models\Grade;
 
 class StudentController extends Controller
 {
@@ -21,7 +23,9 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('students.create');
+        $subjects = Subject::all();
+        $grades = Grade::all();
+        return view('students.create',compact('subjects','grades'));
     }
 
     /**
@@ -39,8 +43,15 @@ class StudentController extends Controller
         $student->date_of_birth = $request->date_of_birth;
         $student->address = $request->address;
         $student->join_date = $request->join_date;
+        $student->grade_id = $request->grade_id;
 
         $student->save();
+
+        // Add subjects
+        $student->subjects()->attach($request->subjects);
+
+
+
         return redirect('/students');
     }
 
@@ -50,7 +61,8 @@ class StudentController extends Controller
     public function show(string $id)
     {
         $student = Student::Find($id);
-        return view('students.show',compact('student'));
+        $subjects = Student::Find($id)->subjects;
+        return view('students.show',compact('student','subjects'));
     }
 
     /**

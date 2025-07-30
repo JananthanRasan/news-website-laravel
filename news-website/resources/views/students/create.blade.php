@@ -43,6 +43,26 @@
                         <td><input type="text" name="telephone_no" id="telephone_no" class="form-control mt-2" required></td>
                     </tr>
                     <tr>
+                        <td><label for="grade" class="col-form-label mt-2">Grade</label></td>
+                        <td>
+                            <select name="grade_id" id="grade" class="form-control mt-2">
+                                @foreach ($grades as $grade)
+                                    <option value="{{ $grade->id }}">{{ $grade->grade_name }}</option>
+                                @endforeach
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="subjects" class="col-form-label mt-2">Subjects</label></td>
+                        <td>
+                            <select name="subjects[]" id="subjects" class="form-control mt-2" multiple>
+                                @foreach ($subjects as $subject)
+                                    <option value="{{ $subject->id }}">{{ $subject->subject_name }}</option>
+                                @endforeach
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
                         <td><label for="nic_no" class="col-form-label mt-2">NIC No</label></td>
                         <td><input type="text" name="nic_no" id="nic_no" class="form-control mt-2" required></td>
                     </tr>
